@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+
+    <link rel="icon" href="https://res.cloudinary.com/di9ahcpdk/image/upload/v17    27343771/Foody_Website/Images/qyjfgs2hp3sr2ktr4nnj.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-basket-shopping fa-flip"></i> Foody </a>
+        
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search " id="search-btn"></div>
+            <div class="fas fa-shopping-cart " id="cart-btn"></div>
+            <div class="fas fa-user " id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search fa-shake"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash fa-bounce"></i>
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727358234/Foody_Website/Images/eortjoglg3dkshiick6o.png" alt="">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">Rs.50/-</span>
+                    <span class="price">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash fa-bounce"></i>
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343739/Foody_Website/Images/lhpwrjjhm1nyqztbqlqj.jpg" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">Rs.50/-</span>
+                    <span class="price">qty : 2</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash fa-bounce"></i>
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343782/Foody_Website/Images/cbzswx612zxjmvmhbtrl.jpg" alt="">
+                <div class="content">
+                    <h3>papaya</h3>
+                    <span class="price">Rs.50/-</span>
+                    <span class="price">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="total"> total : Rs.200/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder=" your email" class="box">
+            <input type="password" placeholder=" your password" class="box">
+            <p>forgot your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+        
+    </header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>fresh and <span>organic</span> products for your</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dignissimos quisquam modi accusantium numquam ea.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading">our <span>features</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343722/Foody_Website/Images/oo7pujrc2dak1pqbv9c5.jpg" alt="">
+            <h3>fresh and organic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343712/Foody_Website/Images/uagxllujczlcpvgsdy1g.jpg" alt="">
+            <h3>free delivery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343712/Foody_Website/Images/uegbhi62ieysnn3yqrpt.jpg" alt="">
+            <h3>easy payment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quod?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+ 
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our  <span>products</span></h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343792/Foody_Website/Images/eqaehzkhryqteroojuoe.jpg" alt="">
+                <h3>fresh orange</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343739/Foody_Website/Images/lhpwrjjhm1nyqztbqlqj.jpg" alt="">
+                <h3>fresh Onion</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>     
+            
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343744/Foody_Website/Images/cixhcnl9f4b2goztytyx.jpg" alt="">
+                <h3>fresh meat</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>    
+    
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343721/Foody_Website/Images/fbtdyuu5splpdsxke9ik.jpg" alt="">
+                <h3>fresh apple</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>    
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343718/Foody_Website/Images/nq2ykekq7qawfw5avsax.jpg" alt="">
+                <h3>fresh banana</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>  
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343760/Foody_Website/Images/sihns6v4crc5xze6uzqv.jpg" alt="">
+                <h3>fresh avocado</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343718/Foody_Website/Images/nq2ykekq7qawfw5avsax.jpg" alt="">
+                <h3>fresh banana</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>    
+    
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343760/Foody_Website/Images/sihns6v4crc5xze6uzqv.jpg" alt="">
+                <h3>fresh avocado</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>    
+    
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727358234/Foody_Website/Images/eortjoglg3dkshiick6o.png" alt="">
+                <h3>fresh watermelon</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>    
+    
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343782/Foody_Website/Images/cbzswx612zxjmvmhbtrl.jpg" alt="">
+                <h3>fresh papaya</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div> 
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343792/Foody_Website/Images/eqaehzkhryqteroojuoe.jpg" alt="">
+                <h3>fresh orange</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343739/Foody_Website/Images/lhpwrjjhm1nyqztbqlqj.jpg" alt="">
+                <h3>fresh Onion</h3>
+                <div class="price">Rs.50/- - 100/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div> 
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343804/Foody_Website/Images/wqvzploo1cqqbo0lrmgy.jpg" alt="">
+            <h3>vegetables</h3>
+            <p>upto 40% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343769/Foody_Website/Images/fhygus1i9obpqsfv7uku.jpg" alt="">
+            <h3>fresh fruits</h3>
+            <p>upto 40% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343730/Foody_Website/Images/af0bkogpat4wh7jcyjdc.jpg" alt="">
+            <h3>dairy products</h3>
+            <p>upto 40% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343812/Foody_Website/Images/q05jykh6q2g6xvqe4syr.jpg" alt="">
+            <h3>fresh meat</h3>
+            <p>upto 40% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span></h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343733/Foody_Website/Images/siisgvqt68dgryhzqmp8.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>joe Goldberg</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343760/Foody_Website/Images/vill65cngwsltduxzib0.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>Riya Jaiswal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343724/Foody_Website/Images/h1nqpspu6aniyoqryktu.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>Rahul Pandey</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343812/Foody_Website/Images/xijl42zichkcjgqliixn.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>Allen Parker</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343724/Foody_Website/Images/h1nqpspu6aniyoqryktu.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>Rahul Pandey</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Images/girl.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic nam debitis? Porro earum soluta saepe cupiditate unde, iusto rerum.</p>
+                <h3>Riya Jaiswal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727345452/Foody_Website/Images/t44d41rtto9mgqwa2gbm.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user fa-fade"> by user</i></a>
+                    <a href="#"><i class="fas fa-user fa-fade"> 1st may, 2021</i></a>
+                </div>
+                <h3>fresh and organic vegetables and fruits</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, explicabo?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="https://res.cloudinary.com/di9ahcpdk/image/upload/v1727343829/Foody_Website/Images/wiycipqswsgeqoqqhjwm.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user fa-fade"> by user</i></a>
+                    <a href="#"><i class="fas fa-user fa-fade"> 1st may, 2021</i></a>
+                </div>
+                <h3>fresh and organic vegetables and fruits</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, explicabo?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Images/front.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user fa-fade"> by user</i></a>
+                    <a href="#"><i class="fas fa-user fa-fade"> 1st may, 2021</i></a>
+                </div>
+                <h3>fresh and organic vegetables and fruits</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, explicabo?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Foody <i class="fas fa-shopping-basket fa-bounce"></i> </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, delectus!</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3> Contact info </h3>
+            <a href="#" class="links"><i class="fas fa-phone fa-shake"></i>+121-587-5432</a>
+            <a href="#" class="links"><i class="fas fa-phone fa-shake"></i>+101-489-7810</a>
+            <a href="#" class="links"><i class="fas fa-envelope fa-shake"></i>Pavans@gmail.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker-alt fa-shake"></i>Pune, india - 411042</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> home </i></a>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> features </i></a>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> products </i></a>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> categories </i></a>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> review </i></a>
+            <a href="#" class="links"><i class="fas fa-arrow-right fa-fade"> blogs </i></a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>Join us for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="Join us" class="btn">
+            <img src="Images/" alt="" class="payment-img">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr.Pavan web designer </span> | all rights reserved </div>
+
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
